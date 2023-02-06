@@ -1,0 +1,19 @@
+.logo {
+    height: 2.5rem;
+}
+
+.footer-container {
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.25rem;
+
+}
+
+.social-media-icons-container {
+    display: flex;
+    gap: 1rem;
+}

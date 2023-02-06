@@ -1,0 +1,29 @@
+@font-face {
+  font-family: Gobold_Regular;
+  src: url("./assets/fonts/Gobold_Regular.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: Product_Sans;
+  src: url("./assets/fonts/Product_Sans.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: Product_Sans;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media (-webkit-device-pixel-ratio: 1.25) {
+  :root {
+  zoom: 0.8;
+  }}

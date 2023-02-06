@@ -1,0 +1,15 @@
+.store-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 3rem 0rem 1rem 0rem;
+  flex-wrap: wrap;
+  padding: 0 2rem;
+  height:100%;
+  gap:2rem;
+}
+
+@media screen and (max-width:1600px) {
+  .store-container{
+    gap: 1.5rem;
+  }
+}

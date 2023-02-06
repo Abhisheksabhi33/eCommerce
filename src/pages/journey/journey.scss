@@ -1,0 +1,119 @@
+.journey-container {
+  position: relative;
+  
+  .bg-img-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 1.5rem;
+      
+      .bg-img {
+
+          box-shadow: 2px 5px 10px 5px rgba(22, 22, 22, 0.166);
+          width: 65rem;
+          height: 16rem;
+        }
+        
+        .heading {
+            position: absolute;
+            color: rgb(232, 232, 232);
+            top: 10rem;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 4rem;
+        }
+        
+        .content-parent-container {
+        box-shadow: 2px 5px 10px 5px rgba(22, 22, 22, 0.166);
+      background-color: rgb(22, 22, 22);
+      width: 65rem;
+      height: 30rem;
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      padding: 1rem;
+
+      .circle {
+        position: relative;
+        border: 2px solid rgb(221, 220, 220);
+        border-radius: 50%;
+        height: 0.6rem;
+        width: 0.6rem;
+        // line-height: 0.4rem;
+        text-align: center;
+        background-color: rgb(22, 22, 22);
+        z-index: 2;
+        padding: 0.1rem;
+        left: 0.5rem;
+      }
+
+      .circle {
+        &:first-child {
+          margin-top: 1.8rem;
+        }
+
+        &:first-child:before {
+          display: none;
+        }
+
+        &:before {
+          position: absolute;
+          border: 1px solid rgb(221, 220, 220);
+          width: 0;
+          height: 5.7rem;
+          display: block;
+          content: "";
+          left: 50%;
+          z-index: 1;
+          top: -5.9rem;
+          margin-left: -1px;
+        }
+      }
+
+      .c-1 {
+        margin-top: 3.2rem;
+      }
+
+      .c-2 {
+        margin-top: 5.6rem;
+      }
+
+      .c-3 {
+        margin-top: 5.7rem;
+      }
+
+      .c-4 {
+        margin-top: 5.7rem;
+      }
+
+      .content-container {
+        padding-left: 1rem;
+        position: absolute;
+        color: rgb(221, 220, 220);
+        left: 2.5rem;
+        // top: 5rem;
+
+        .content {
+            height: 4.75rem;
+          .content-heading {
+            text-transform: uppercase;
+            font-size: 1rem;
+            margin: 1.5rem 0 0.5rem 0rem;
+          }
+
+          .content-para {
+            max-width: 95%;
+            // margin-top: -2rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width:1240px){
+    .journey-container{
+        padding: 1rem;
+    }
+}

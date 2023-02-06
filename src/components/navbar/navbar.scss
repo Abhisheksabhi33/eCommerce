@@ -1,0 +1,80 @@
+.navbar-container {
+  padding: 2rem 0rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.125rem;
+  width: 75%;
+  margin: 0 auto;
+
+  .left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .logo {
+      height: 2.5rem;
+      cursor: pointer;
+    }
+  }
+
+  .nav-links {
+    flex: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    .link {
+      text-decoration: none;
+      color: var(--black-color);
+      font-size: 1.2rem;
+      cursor: pointer;
+
+      &:hover {
+        transition: all 0.1s ease-in-out;
+        transform: scale(1.05);
+      }
+    }
+  }
+
+  .profile {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+  }
+
+  .nav-active {
+    display: block;
+    height: 3px;
+    background-color: #999;
+    width: 70%;
+    color: #999;
+    transition: all 1s ease-in-out;
+  }
+
+  .nav-inactive {
+    transition: all 0.3s ease-in-out;
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .navbar-container {
+    width: 85%;
+    .nav-links {
+      gap: 1rem;
+    }
+  }
+}
+@media screen and (max-width: 900px) {
+  .navbar-container {
+    width: 90%;
+    .nav-links {
+      gap: 0.7rem;
+    }
+  }
+}
